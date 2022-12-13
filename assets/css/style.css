@@ -25,8 +25,24 @@ background-color: transparent;
 }
 
 
+
+
 /*Footer*/
 
 .custom-tooltip {
   --bs-tooltip-bg: #121212;
+}
+
+
+
+/*Media Query*/
+@media (min-width:768px){
+  .navbar-brand{
+    margin-left:130px;
+  }
+
+  .navbar-collapse{
+    margin-right: 130px;
+  }
+
 }
