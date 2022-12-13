@@ -24,3 +24,9 @@ body{
 background-color: transparent;
 }
 
+
+/*Footer*/
+
+.custom-tooltip {
+  --bs-tooltip-bg: #121212;
+}
