@@ -38,11 +38,11 @@ background-color: transparent;
 /*Media Query*/
 @media (min-width:768px){
   .navbar-brand{
-    margin-left:130px;
+    margin-left:3vw;
   }
 
   .navbar-collapse{
-    margin-right: 130px;
+    margin-right: 3vw;
   }
 
 }
