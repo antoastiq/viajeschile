@@ -7,19 +7,30 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 
 //Alert - Sección Contacto
 
-var texto = "¡Gracias por tu mensaje! Pronto te contactaremos."
+let texto = "¡Gracias por tu mensaje! Pronto te contactaremos."
 $("#sendmessage").click(function(){
-    alert(texto)
+  alert(texto)
 })
 
 
 //Navbar background - Navbar
 
 
+$(window).scroll(function(){
+	let windowTopPosition =  $(this).scrollTop() //para determinar la parte superior de la pantalla
+	let sectionQuienesSomos = $("#quienessomos").offset().top //para determinar el límite superior de la sección siguiente
 
-$(window).scroll(function (){
-    console.log("scroll")
-    $(".navbar").css("background-color","rgba(0,0,0, .5)")
+	if (windowTopPosition > sectionQuienesSomos) {
+		$(".navbar").css("background-color","rgba(0,0,0, .5)")
+	} //si la posición baja desde el límite superior de la sección siguiente, fondo negro con opacity
 
+	else {
+		$(".navbar").css("background-color","transparent")
+	} //si la posición no baja del límite superior de la sección siguiente, fondo transparente
 })
+
+
+
+
+
 
