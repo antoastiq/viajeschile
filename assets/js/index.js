@@ -13,8 +13,8 @@ $("#sendmessage").click(function(){
 })
 
 
-//Navbar background - Navbar
 
+//Navbar background - Navbar
 
 $(window).scroll(function(){
 	let windowTopPosition =  $(this).scrollTop() //para determinar la parte superior de la pantalla
